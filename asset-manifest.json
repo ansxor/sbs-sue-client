@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/sbs-sue-client/static/css/main.cdd96609.chunk.css",
+    "main.js": "/sbs-sue-client/static/js/main.d4b3b2d1.chunk.js",
+    "main.js.map": "/sbs-sue-client/static/js/main.d4b3b2d1.chunk.js.map",
+    "runtime-main.js": "/sbs-sue-client/static/js/runtime-main.627bf7d0.js",
+    "runtime-main.js.map": "/sbs-sue-client/static/js/runtime-main.627bf7d0.js.map",
+    "static/js/2.cd06c67b.chunk.js": "/sbs-sue-client/static/js/2.cd06c67b.chunk.js",
+    "static/js/2.cd06c67b.chunk.js.map": "/sbs-sue-client/static/js/2.cd06c67b.chunk.js.map",
+    "static/js/3.60bdd297.chunk.js": "/sbs-sue-client/static/js/3.60bdd297.chunk.js",
+    "static/js/3.60bdd297.chunk.js.map": "/sbs-sue-client/static/js/3.60bdd297.chunk.js.map",
+    "index.html": "/sbs-sue-client/index.html",
+    "static/css/main.cdd96609.chunk.css.map": "/sbs-sue-client/static/css/main.cdd96609.chunk.css.map",
+    "static/js/2.cd06c67b.chunk.js.LICENSE.txt": "/sbs-sue-client/static/js/2.cd06c67b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.627bf7d0.js",
+    "static/js/2.cd06c67b.chunk.js",
+    "static/css/main.cdd96609.chunk.css",
+    "static/js/main.d4b3b2d1.chunk.js"
+  ]
+}
