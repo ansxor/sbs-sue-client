@@ -4,7 +4,7 @@ import "./CategoryViewItem.css";
 function CategoryItem(props) {
   return (
     <button onClick={() => props.clickEvent(props.id)}>
-        <i className="fa fa-folder-open"></i> {props.name}
+      <i className="fa fa-folder-open"></i> {props.name}
     </button>
   );
 }

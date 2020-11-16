@@ -1,22 +1,32 @@
 div.tabList {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    width: 100%;
-    z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  width: 100%;
+  z-index: 2;
 }
 
 div.tabList > button {
-    font-size: 18px; 
-    text-align: center;
-    padding: 8px;
-    margin: 0;
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+}
+
+div.tabList > button > i {
+  padding: 6px;
+}
+
+div.tabList > button > img {
+  width: 30px;
+  height: 30px;
+  padding: 0px;
+  margin: 0px;
 }
 
 div.tabList > button:hover {
-    color: gray;
-    cursor: pointer;
+  color: gray;
+  cursor: pointer;
 }
 
 div.tabList > button.selected {
-    color: blue;
+  color: blue;
 }

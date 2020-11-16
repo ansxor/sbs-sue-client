@@ -7,6 +7,7 @@ import "./Sidebar.css";
 
 function Sidebar(props) {
   const [tab, setTab] = useState("upload");
+  const [headerDisplay, setHeaderDisplay] = useState("Loading...")
 
   function selectEvent(icon) {
     setTab(icon);
@@ -20,8 +21,24 @@ function Sidebar(props) {
         width: "100%",
         height: "100%",
         overflow: "hidden",
+        backgroundColor: "white",
+        borderLeft: "1px solid gray"
       }}
     >
+      <div
+        style={{
+          width: "100%",
+          paddingTop: "0.5em",
+          paddingBottom: "0.5em",
+          paddingLeft: "0.5em",
+          marginBottom: "0.1em",
+          fontSize: "24px",
+          backgroundColor: "white",
+          borderBottom: "1px solid gray"
+        }}
+      >
+        {headerDisplay}
+      </div>
       <div
         style={{
           flex: "1",
@@ -29,17 +46,18 @@ function Sidebar(props) {
         }}
       >
         <div className={tab !== "upload" ? "hiddenTab" : ""}>
-          <UploadTab />
+          <UploadTab changeHeader={setHeaderDisplay} visible={tab !== "upload" ? false : true}/>
         </div>
         <div className={tab !== "list-alt" ? "hiddenTab" : ""}>
-          <ActivityTab />
+          <ActivityTab changeHeader={setHeaderDisplay} visible={tab !== "list-alt" ? false : true} />
         </div>
         <div className={tab !== "folder" ? "hiddenTab" : ""}>
-          <CategoryTab />
+          <CategoryTab changePage={props.changePage} changeHeader={setHeaderDisplay} visible={tab !== "folder" ? false : true}/>
         </div>
       </div>
-      <div>
-        <TabList selectEvent={selectEvent} />
+      <div style={{
+      }}>
+        <TabList usertoken={props.usertoken} selectEvent={selectEvent} />
       </div>
     </div>
   );

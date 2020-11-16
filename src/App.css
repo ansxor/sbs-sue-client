@@ -1,0 +1,45 @@
+div.App {
+  display: grid;
+  grid-template-rows: 48px auto;
+  height: 100vh;
+  width: 100vw;
+}
+
+div.App > header {
+  background-color: gray;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+main {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 0px auto;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+main > div.content > div {
+  display: none;
+}
+
+main.mythehide > div.content > div{
+  display: block;
+}
+
+main.mythehide {
+  grid-template-columns: auto 0px;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    grid-template-columns: auto 400px;
+  }
+  main.mythehide {
+    grid-template-columns: auto 0px;
+  }
+  main > div.content > div {
+    display: block;
+  }
+}
