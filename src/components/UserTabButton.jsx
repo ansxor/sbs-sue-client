@@ -4,7 +4,7 @@ function UserTabButton(props) {
   const [userImg, setUserImg] = useState("");
 
   function selectOption() {
-    if (props.selectEvent) props.selectEvent(props.icon);
+    if (props.selectEvent) props.selectEvent("user");
   }
 
   useEffect(() => {

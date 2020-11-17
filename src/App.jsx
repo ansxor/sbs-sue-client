@@ -12,6 +12,7 @@ import Home from './components/Home.jsx';
 function App() {
   const [classState, setClassState] = useState("");
   const [currentPageID, setCurrentPageID] = useState(1829);
+  const [token, setToken] = useState("");
 
   function toggleHide() {
     if (classState === "") setClassState("mythehide");
@@ -35,7 +36,7 @@ function App() {
               <Route path="" component={Home} />
             </Switch>
           </div>
-          <Sidebar changePage={changePage} />
+          <Sidebar setToken={setToken} usertoken={token} changePage={changePage} />
         </main>
       </div>
     </Router>

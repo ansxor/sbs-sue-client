@@ -3,10 +3,11 @@ import TabList from "./TabList.jsx";
 import UploadTab from "./UploadTab.jsx";
 import ActivityTab from "./ActivityTab.jsx";
 import CategoryTab from "./CategoryTab.jsx";
+import UserSigninTab from "./UserSigninTab.jsx";
 import "./Sidebar.css";
 
 function Sidebar(props) {
-  const [tab, setTab] = useState("upload");
+  const [tab, setTab] = useState("folder");
   const [headerDisplay, setHeaderDisplay] = useState("Loading...")
 
   function selectEvent(icon) {
@@ -34,6 +35,9 @@ function Sidebar(props) {
         </div>
         <div className={tab !== "folder" ? "hiddenTab" : ""}>
           <CategoryTab changePage={props.changePage} changeHeader={setHeaderDisplay} visible={tab !== "folder" ? false : true}/>
+        </div>
+        <div className={tab !== "user" ? "hiddenTab" : ""}>
+          <UserSigninTab setToken={props.setToken} changeHeader={setHeaderDisplay} visible={tab !== "user" ? false : true}/>
         </div>
       </div>
       <div style={{

@@ -1,3 +1,13 @@
+/* eslint-disable no-cond-assign */
+/* eslint-disable no-mixed-operators */
+/* eslint-disable no-redeclare */
+/* eslint-disable no-loop-func */
+/* eslint-disable no-func-assign */
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-useless-concat */
+/* eslint-disable no-useless-escape */
+/* eslint-disable eqeqeq */
+/* eslint-disable new-parens */
 /* eslint-disable no-undef */
 /* eslint-disable no-restricted-globals */
 // TODO:
