@@ -15,30 +15,11 @@ function Sidebar(props) {
 
   return (
     <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        width: "100%",
-        height: "100%",
-        overflow: "hidden",
-        backgroundColor: "white",
-        borderLeft: "1px solid gray"
-      }}
+      className="sidebar"
     >
-      <div
-        style={{
-          width: "100%",
-          paddingTop: "0.5em",
-          paddingBottom: "0.5em",
-          paddingLeft: "0.5em",
-          marginBottom: "0.1em",
-          fontSize: "24px",
-          backgroundColor: "white",
-          borderBottom: "1px solid gray"
-        }}
-      >
+      <header>
         {headerDisplay}
-      </div>
+      </header>
       <div
         style={{
           flex: "1",

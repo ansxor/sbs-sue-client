@@ -4,6 +4,8 @@ import ContentItem from "./ContentItem.jsx";
 
 let viewCache = {};
 
+// TODO: Category button should bring back to root
+
 function CategoryTab(props) {
   const [categoryID, setCategoryID] = useState(props.id || 0);
   const [categoryMetadata, setCategoryMetadata] = useState({name: "", id: 0});
@@ -17,6 +19,7 @@ function CategoryTab(props) {
       // we need to do safety checks against every single one of these just to make sure that the program
       // doesn't try to overwrite anything when quickly switching between categories, this doesn't 100%
       // work but it's something lol
+      // TODO: We should really just disable loading another category instead
       if (cachedCategoryID === categoryID)
         if (viewCache[categoryID].category !== {})
           setCategories(viewCache[categoryID].category);
@@ -41,6 +44,7 @@ function CategoryTab(props) {
       .then((data) => {
         // if the category isn't the root id, then extract the metadata about the current category
         let metadata = { name: "[Root]", parentId: 0, id: 0 };
+        // TODO: This fails with some categories where there is only one subcategory
         if (categoryID !== 0) {
           metadata = data.category.pop();
         }
