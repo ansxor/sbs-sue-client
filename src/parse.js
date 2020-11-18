@@ -282,7 +282,7 @@ var Parse = {
 					// put your fragment link handling code here
 					var hash1 = getPath()
 					var name = url.substr(1)
-					hash = "#"+hash1[0]+"#"+name
+					let hash = "#"+hash1[0]+"#"+name
 					url = hash
 					node.onclick = function(e) {
 						var hash2 = getPath()

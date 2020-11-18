@@ -26,19 +26,11 @@ function UserTabButton(props) {
 
   return (
     <button onClick={selectOption} className={props.selected ? "selected" : ""}>
-      <i
-        className={`fa fa-user`}
-        style={{
-          display: userImg !== "" ? "none" : "",
-        }}
-      ></i>
-      <img
-        src={userImg}
-        alt="User Avatar"
-        style={{
-          display: userImg === "" ? "none" : "",
-        }}
-      />
+      {(userImg === "" || props.usertoken === "") ? (
+        <i className={`fa fa-user`} />
+      ) : (
+        <img src={userImg} alt="User Avatar" />
+      )}
     </button>
   );
 }

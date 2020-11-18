@@ -5,6 +5,7 @@ import ActivityTab from "./ActivityTab.jsx";
 import CategoryTab from "./CategoryTab.jsx";
 import UserSigninTab from "./UserSigninTab.jsx";
 import "./Sidebar.css";
+import UserInfoTab from "./UserInfoTab.jsx";
 
 function Sidebar(props) {
   const [tab, setTab] = useState("folder");
@@ -37,7 +38,9 @@ function Sidebar(props) {
           <CategoryTab changePage={props.changePage} changeHeader={setHeaderDisplay} visible={tab !== "folder" ? false : true}/>
         </div>
         <div className={tab !== "user" ? "hiddenTab" : ""}>
-          <UserSigninTab setToken={props.setToken} changeHeader={setHeaderDisplay} visible={tab !== "user" ? false : true}/>
+          {(props.usertoken === "") ? 
+           (<UserSigninTab setToken={props.setToken} changeHeader={setHeaderDisplay} visible={tab !== "user" ? false : true}/>) :
+           (<UserInfoTab usertoken={props.usertoken} setToken={props.setToken} changeHeader={setHeaderDisplay} visible={tab !== "user" ? false : true}/>)}
         </div>
       </div>
       <div style={{

@@ -29,4 +29,5 @@ div.tabList > button:hover {
 
 div.tabList > button.selected {
   color: blue;
+  border: 1px solid blue;
 }

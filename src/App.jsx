@@ -12,7 +12,7 @@ import Home from './components/Home.jsx';
 function App() {
   const [classState, setClassState] = useState("");
   const [currentPageID, setCurrentPageID] = useState(1829);
-  const [token, setToken] = useState("");
+  const [token, setToken] = useState(localStorage.getItem("token"))
 
   function toggleHide() {
     if (classState === "") setClassState("mythehide");
