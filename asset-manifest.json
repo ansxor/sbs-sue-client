@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/sbs-sue-client/static/css/main.d569c07f.chunk.css",
-    "main.js": "/sbs-sue-client/static/js/main.762fe2a1.chunk.js",
-    "main.js.map": "/sbs-sue-client/static/js/main.762fe2a1.chunk.js.map",
+    "main.css": "/sbs-sue-client/static/css/main.266d1f97.chunk.css",
+    "main.js": "/sbs-sue-client/static/js/main.fabc6da3.chunk.js",
+    "main.js.map": "/sbs-sue-client/static/js/main.fabc6da3.chunk.js.map",
     "runtime-main.js": "/sbs-sue-client/static/js/runtime-main.e3e15fd2.js",
     "runtime-main.js.map": "/sbs-sue-client/static/js/runtime-main.e3e15fd2.js.map",
-    "static/js/2.86533c14.chunk.js": "/sbs-sue-client/static/js/2.86533c14.chunk.js",
-    "static/js/2.86533c14.chunk.js.map": "/sbs-sue-client/static/js/2.86533c14.chunk.js.map",
+    "static/js/2.230708a8.chunk.js": "/sbs-sue-client/static/js/2.230708a8.chunk.js",
+    "static/js/2.230708a8.chunk.js.map": "/sbs-sue-client/static/js/2.230708a8.chunk.js.map",
     "static/js/3.f398910a.chunk.js": "/sbs-sue-client/static/js/3.f398910a.chunk.js",
     "static/js/3.f398910a.chunk.js.map": "/sbs-sue-client/static/js/3.f398910a.chunk.js.map",
     "index.html": "/sbs-sue-client/index.html",
-    "static/css/main.d569c07f.chunk.css.map": "/sbs-sue-client/static/css/main.d569c07f.chunk.css.map",
-    "static/js/2.86533c14.chunk.js.LICENSE.txt": "/sbs-sue-client/static/js/2.86533c14.chunk.js.LICENSE.txt"
+    "static/css/main.266d1f97.chunk.css.map": "/sbs-sue-client/static/css/main.266d1f97.chunk.css.map",
+    "static/js/2.230708a8.chunk.js.LICENSE.txt": "/sbs-sue-client/static/js/2.230708a8.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e3e15fd2.js",
-    "static/js/2.86533c14.chunk.js",
-    "static/css/main.d569c07f.chunk.css",
-    "static/js/main.762fe2a1.chunk.js"
+    "static/js/2.230708a8.chunk.js",
+    "static/css/main.266d1f97.chunk.css",
+    "static/js/main.fabc6da3.chunk.js"
   ]
 }
