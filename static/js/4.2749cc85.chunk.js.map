@@ -1,0 +1,1 @@
+{"version":3,"sources":["routes/Home.jsx"],"names":["Home"],"mappings":"8IAMeA,UAJf,WACI,OAAO","file":"static/js/4.2749cc85.chunk.js","sourcesContent":["import React from 'react';\n\nfunction Home() {\n    return <div>Hello OwO</div>\n}\n\nexport default Home;"],"sourceRoot":""}

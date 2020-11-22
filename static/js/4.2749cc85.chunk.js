@@ -1,0 +1,2 @@
+(this["webpackJsonpsbs-sue-client"]=this["webpackJsonpsbs-sue-client"]||[]).push([[4],{34:function(s,e,t){"use strict";t.r(e);var n=t(0);t(1);e.default=function(){return Object(n.jsx)("div",{children:"Hello OwO"})}}}]);
+//# sourceMappingURL=4.2749cc85.chunk.js.map
